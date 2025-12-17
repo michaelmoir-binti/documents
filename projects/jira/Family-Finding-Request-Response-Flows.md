@@ -12,6 +12,43 @@ This application uses a **hybrid architecture**:
   - Makes GraphQL queries/mutations
   - Manages client-side state
 
+### What is .erb?
+
+**.erb** stands for **ERB (Embedded Ruby)**. It's a templating system used in Ruby on Rails.
+
+**How it works:**
+- `.erb` files are HTML templates with embedded Ruby code
+- Ruby code is executed on the **server** before sending HTML to the browser
+- The Ruby code is replaced with its output (text, HTML, etc.)
+- Final result is pure HTML sent to the browser
+
+**Syntax:**
+```erb
+<!-- Ruby code that outputs text -->
+<%= ruby_expression %>
+
+<!-- Ruby code that doesn't output (loops, conditionals) -->
+<% ruby_code %>
+
+<!-- HTML that's sent as-is -->
+<div>Hello World</div>
+```
+
+**Example:**
+```erb
+<h1>Welcome, <%= current_user.name %>!</h1>
+<% if user.admin? %>
+  <p>You are an admin</p>
+<% end %>
+```
+
+**When executed on server:**
+- `<%= current_user.name %>` → Evaluates Ruby, outputs "John"
+- `<% if user.admin? %>` → Evaluates Ruby condition, includes/excludes HTML
+- Result sent to browser: `<h1>Welcome, John!</h1><p>You are an admin</p>`
+
+**Key point:** All Ruby code runs **server-side**. The browser never sees Ruby code, only the final HTML output.
+
 ---
 
 ## Flow 1: Initial Page Load - Family Finding Searches Dashboard
@@ -34,16 +71,25 @@ When a user navigates to the Family Finding Searches page, the browser loads an 
 │   ───────────────────────────────   │
 │   Routes: config/routes.rb          │
 │   → Matches route to controller     │
-│   → FamilyFindingSearchesController │
-│   → Renders HTML template           │
+│   → FamilyFindingSearchesController#index │
+│   → Renders view template:          │
+│      app/views/family_finding/      │
+│        searches/index.html.erb      │
+│   → Uses layout:                    │
+│      app/views/layouts/             │
+│        application_full_width.erb   │
 │   → Includes JavaScript bundles     │
+│   → react_component helper renders  │
+│      mounting div for React         │
 └──────┬──────────────────────────────┘
        │
        │ 2. HTML Response
-       │    - Basic page structure
-       │    - <div id="root"></div>
+       │    - Complete HTML document
+       │    - <div data-react-component="...">
+       │      (mounting point for React)
        │    - JavaScript bundle URLs
        │    - CSS files
+       │    - Server-side props (counties data)
        │
        ▼
 ┌─────────────┐
@@ -52,7 +98,9 @@ When a user navigates to the Family Finding Searches page, the browser loads an 
 │   • Parses HTML                    │
 │   • Downloads JavaScript bundles   │
 │   • Executes JavaScript            │
-│   • React mounts to #root          │
+│   • React finds react_component div│
+│   • React mounts to div            │
+│   • Receives props (counties)      │
 └──────┬──────┘
        │
        │ 3. JavaScript Execution
@@ -132,18 +180,131 @@ When a user navigates to the Family Finding Searches page, the browser loads an 
 └─────────────────────────────────────┘
 ```
 
+### HTML Template Files
+
+The initial HTML page is composed of multiple template files that Rails renders together:
+
+#### 1. Base HTML Layout
+**File**: `app/views/layouts/_application.html.erb`
+
+This is the root HTML template that provides the basic HTML structure:
+```erb
+<!DOCTYPE html>
+<html lang="<%= (I18n.locale or "en") %>">
+  <head>
+    <title><%= meta_title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS files -->
+    <%= stylesheet_link_tag "shared_styles_sprockets_dependent" %>
+    <%= stylesheet_packs_with_chunks_tag "applicant_only", "application", media: :all %>
+    <!-- JavaScript bundles -->
+    <%= javascript_include_tag "application" %>
+    <!-- Other meta tags, CSRF tokens, etc. -->
+  </head>
+  <body class="<%= BintiFamily::DEPLOYMENT_ENV %>">
+    <div id="wrapper">
+      <%= yield :body_content %>
+    </div>
+    <%= render "shared/footer", type: "application" %>
+  </body>
+</html>
+```
+
+**What it does:**
+- Provides `<html>`, `<head>`, `<body>` structure
+- Includes CSS and JavaScript bundle references
+- Sets up meta tags, CSRF tokens
+- Provides a wrapper div where page content goes
+
+#### 2. Layout Wrapper
+**File**: `app/views/layouts/application_full_width.erb`
+
+This wraps the base layout and provides the page structure:
+```erb
+<% content_for(:body_content) do %>
+    <%= render partial: "layouts/non_applicant_portal_header" %>
+    <main>
+        <%= render partial: "shared/notifications", locals: { flash_messages: flash } %>
+        <%= yield %>  <!-- This is where the view content goes -->
+    </main>
+<% end %>
+
+<%= render("layouts/application") %>
+```
+
+**What it does:**
+- Renders the header/navigation
+- Sets up the main content area
+- Includes flash message notifications
+- Uses `yield` to insert the specific view content
+
+#### 3. Family Finding Searches View
+**File**: `app/views/family_finding/searches/index.html.erb`
+
+This is the specific template for the Family Finding searches page:
+```erb
+<%- content_for(:title, "Binti | #{I18n.t("javascript.components.family_finding.searches.title")}") %>
+<% counties_by_state = Geography::USA::CountiesOfStates::ALL %>
+<%= react_component("family_finding/searches/Searches", {
+      counties: current_user.agency.state ? counties_by_state[current_user.agency.state] : counties_by_state.values.flatten.uniq
+    },
+  ) %>
+```
+
+**What it does:**
+- Sets the page title (via `content_for(:title)`)
+- Prepares data (counties list) from server-side Ruby
+- Uses `react_component` helper to render the React component
+- Passes server-side data (counties) as props to React
+
+#### How `react_component` Works
+
+The `react_component` helper (from the `react-rails` gem) does the following:
+
+1. **Server-side (Ruby):**
+   - Renders a `<div>` with data attributes:
+     ```html
+     <div 
+       data-react-component="family_finding/searches/Searches"
+       data-react-props='{"counties":["County1","County2",...]}'
+       data-react-class="..."
+     ></div>
+     ```
+
+2. **Client-side (JavaScript):**
+   - JavaScript bundle (loaded in `<head>`) finds all `react_component` divs
+   - React mounts to those divs
+   - Props are passed to the React component
+   - Component renders and takes over the UI
+
+**Key Points:**
+- The HTML template is **minimal** - it doesn't contain search data
+- The `react_component` helper creates a **mounting point** for React
+- **Server-side data** (like counties) can be passed as props
+- All **data fetching** happens client-side via GraphQL after React mounts
+
 ### Files Involved
 
 #### Server-Side (Ruby)
 1. **Routes** (`config/routes.rb`)
    - Defines URL → controller mapping
-   - Example: `/family_finding/searches` → `FamilyFindingSearchesController`
+   - Example: `/family_finding/searches` → `FamilyFindingSearchesController#index`
 
 2. **Controller** (`app/controllers/family_finding/searches_controller.rb` - if exists)
-   - OR handled by React Router (SPA routing)
-   - Renders initial HTML page
+   - Handles the HTTP request
+   - Renders the view template
+   - May prepare data for the view
 
-3. **GraphQL Query Resolver** (`app/graphql/queries/family_finding_searches.rb`)
+3. **View Template** (`app/views/family_finding/searches/index.html.erb`)
+   - ERB template that renders the HTML shell
+   - Uses `react_component` helper to mount React
+   - Passes server-side data as props
+
+4. **Layout Files**
+   - `app/views/layouts/_application.html.erb` - Base HTML structure
+   - `app/views/layouts/application_full_width.erb` - Page wrapper
+
+5. **GraphQL Query Resolver** (`app/graphql/queries/family_finding_searches.rb`)
    ```ruby
    class FamilyFindingSearches < BasePaginatedQuery
      query do |status: "all", ...|
@@ -200,9 +361,12 @@ When a user navigates to the Family Finding Searches page, the browser loads an 
 ### Composition Points
 
 **Server-Side Composition:**
-- Rails renders initial HTML shell
-- Includes JavaScript bundle references
-- No data in initial HTML (empty `<div id="root"></div>`)
+- Rails renders initial HTML shell using ERB templates
+- Layout files compose together (_application.html.erb → application_full_width.erb → index.html.erb)
+- `react_component` helper creates mounting div with data attributes
+- Server-side data (counties) passed as props via data attributes
+- JavaScript bundle references included in `<head>`
+- No search data in initial HTML (fetched client-side via GraphQL)
 
 **Client-Side Composition:**
 - React mounts and renders component tree

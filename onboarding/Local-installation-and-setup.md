@@ -10,7 +10,7 @@
 
 🛑 👇🏽 🛑 👇🏽 🛑 👇🏽 🛑 👇🏽 🛑 👇🏽 🛑 👇🏽
 
-**Check with your manager and ensure that you've been added to the appropriate Google Cloud projects before continuing (see [For Managers](https://github.com/binti-family/family/wiki/Onboarding:-Setting-Up-Your-Mac-For-Development#for-managers) on the standard install page)**
+**Check with your manager and ensure that you've been added to the appropriate Google Cloud projects before continuing (see [For Managers](https://github.com/binti-family/family/wiki/Onboarding:-Setting-Up-Your-Mac-For-VM-Development#for-managers) on the VM development setup page)**
 
 Without this step you won't be able to download development dumps, and the below install script will fail
 
@@ -133,7 +133,7 @@ docker ps | grep redis
 psql -h 127.0.0.1 -U $USER -d postgres -c "SELECT pid, usename, application_name, state FROM pg_stat_activity WHERE datname = 'binti_family_development' AND pid != pg_backend_pid();"
 ```
 
-If you see active connections, terminate them:
+If you see active connections, terminate them by replacing `PID` with the actual pid from the query above:
 ```bash
 psql -h 127.0.0.1 -U $USER -d postgres -c "SELECT pg_terminate_backend(PID);"
 ```
@@ -142,8 +142,8 @@ psql -h 127.0.0.1 -U $USER -d postgres -c "SELECT pg_terminate_backend(PID);"
 If you see "REMOTE HOST IDENTIFICATION HAS CHANGED" errors:
 ```bash
 # Remove the offending key (backup is created automatically)
+# Replace LINE_NUMBER with the line number mentioned in the error message
 sed -i.bak 'LINE_NUMBERd' ~/.ssh/google_compute_known_hosts
-# Replace LINE_NUMBER with the line number mentioned in the error
 ```
 
 ### 3.4. Environment Variables Not Loading

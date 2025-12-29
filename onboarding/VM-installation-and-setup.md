@@ -75,7 +75,7 @@ cd family
 ```bash
 b gcp-dev-vm ssh_config_append YOUR_NAME
 ```
-| *Note* YOUR_NAME should be the name used to create the VM. The script will prefix the env name (ie `dev-`)
+**Note:** YOUR_NAME should be the name used to create the VM. The script will prefix the env name (ie `dev-`)
 
 - Install [`Remote - SSH`](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension
 - Follow along with the screenshots below to connect to your VM
@@ -101,7 +101,7 @@ In order for our tooling to work, you should setup the various tokens for the va
 ```bash
 code ~/.zprofile
 ```
-- Scroll to the bottom of the file and find something that looks like the below sample. Go through the process of creating new token and adding them in this file
+- Scroll to the bottom of the file and find something that looks like the below sample. Go through the process of creating new tokens and adding them in this file
 ```bash
 # https://id.atlassian.com/manage-profile/security/api-tokens
 export JIRA_AUTH_STRING="YOUR_EMAIL@binti.com:YOUR_TOKEN_FROM_ABOVE_HERE"
@@ -155,16 +155,16 @@ You will use this to run things like Cypress and Selenium and/or if you just fee
 
 Google SSO should work for logging into any environment with your Binti.com account.
 
-Alternatively, you can log in with an email/password combo. When logging in locally, the email/password you should use is dependent on which environment's database you have pulled locally. If it's development, use your email/password you used for development. If you update your email/password in an environment, it can take a while for the dump and the environment to synchronize. It's generally a day behind.
+Alternatively, you can log in with an email/password combo. When logging in on your VM, the email/password you should use is dependent on which environment's database you have loaded. If it's development, use your email/password you used for development. If you update your email/password in an environment, it can take a while for the dump and the environment to synchronize. It's generally a day behind.
 
 When logging in with an email/password combo, you will need to disable the requirement to use Google SSO. This can be done by adding `DISABLE_GOOGLE_OAUTH_ENFORCEMENT=1` to your .env file in your local repo.
 
 ---
 ### Glossary
-**"**_**Virtual Machine**_**"** aka **"**_**VM**_**"** aka **"**_**Host**_**"** - A virtual machine is a dedicated slice (in terms of resources like RAM, CPU, bandwitch, etc) of a much larger physical machine. An end user's (ie: you) experience of a VM is that it's not actually virtual. It presents itself as a full-fledged server. We use VMs for all kinds of things, but for the purposes of this document, each person interacting with our source code (engineers are the obvious group, but we also welcome others to have VMs as well) has their own dedicated VM that lives in Google's datacenter in Oregon, where our production machines also live.
+**"**_**Virtual Machine**_**"** aka **"**_**VM**_**"** aka **"**_**Host**_**"** - A virtual machine is a dedicated slice (in terms of resources like RAM, CPU, bandwidth, etc) of a much larger physical machine. An end user's (ie: you) experience of a VM is that it's not actually virtual. It presents itself as a full-fledged server. We use VMs for all kinds of things, but for the purposes of this document, each person interacting with our source code (engineers are the obvious group, but we also welcome others to have VMs as well) has their own dedicated VM that lives in Google's datacenter in Oregon, where our production machines also live.
 
 You can think of your VM as the computer you use just to do coding work, and it is a remote machine you access through your physical laptop
-- **How you access it** - Primarily through VSCode (as described below)
+- **How you access it** - Primarily through VSCode (as described above in section 5)
 - **Example usage in context** - "_On your VM_"
 
 **"**_**Container**_**"** - A container can be thought of as a super lightweight virtual machine. The difference between the two, for the purposes of this discussion, are that containers use as much of the host's resources and libraries as possible. This makes them much faster to boot up and makes it perfect for development purposes where we can get very close to recreating the actual architecture of our production environments.

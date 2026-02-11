@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns4:PersonResultsPageV3 xmlns:ns4="http://clear.thomsonreuters.com/api/search/2.0" xmlns:ns2="com/thomsonreuters/schemas/common-data" xmlns:ns3="com/thomsonreuters/schemas/search" xmlns:ns5="com/thomsonreuters/schemas/globalbeneficialownership-search">
+  <Status>
+    <StatusCode>200</StatusCode>
+    <SubStatusCode>200</SubStatusCode>
+  </Status>
+  <StartIndex>0</StartIndex>
+  <EndIndex>0</EndIndex>
+  <ResultGroup>
+    <GroupId>aa60613f47bf43a29dc26d330d600a14</GroupId>
+    <RecordCount>1</RecordCount>
+    <Relevance>98</Relevance>
+    <DominantValues>
+      <ns3:PersonDominantValues>
+        <Name>
+          <FirstName>JANE</FirstName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <FullName>SAMPLE-DOCUMENT, JANE</FullName>
+        </Name>
+        <SSN>999-99-XXXX</SSN>
+        <AgeInfo>
+          <PersonBirthDate>01/XX/1951</PersonBirthDate>
+        </AgeInfo>
+        <Address>
+          <Street>101 W 6th ST</Street>
+          <City>TUCSON</City>
+          <State>AZ</State>
+          <ZipCode>85701</ZipCode>
+          <ReportedDate>09/21/2019</ReportedDate>
+        </Address>
+      </ns3:PersonDominantValues>
+    </DominantValues>
+    <RecordDetails>
+      <ns3:PersonResponseDetail>
+        <Name>
+          <FirstName>JANE</FirstName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <FullName>SAMPLE-DOCUMENT, JANE</FullName>
+        </Name>
+        <SSN>999-99-XXXX</SSN>
+        <PersonProfile>
+          <PersonDeathDate>12/12/2014</PersonDeathDate>
+          <PersonDeathDate>01/03/2009</PersonDeathDate>
+          <PersonDeathDate>01/01/2008</PersonDeathDate>
+          <PersonHeight>6'01"</PersonHeight>
+          <PersonSex>MALE</PersonSex>
+          <PersonWeight>260</PersonWeight>
+          <PersonBirthDates>
+            <PersonBirthDate>01/XX/1951</PersonBirthDate>
+            <SourceInfo>
+              <SourceName>Driver's Licenses</SourceName>
+              <SourceDocumentGuid>I9f8d1e940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Address Compilation</SourceName>
+              <SourceDocumentGuid>IMPEOPLEERDDUMMYDOCUMENT01234567</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Professional Licenses</SourceName>
+              <SourceDocumentGuid>I9f8d459f0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Infractions</SourceName>
+              <SourceDocumentGuid>I9f8d1e8c0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Historic Credit Bureau</SourceName>
+              <SourceDocumentGuid>I9f8d1ea50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Driver's Licenses</SourceName>
+              <SourceDocumentGuid>I9f8d45b90fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Experian</SourceName>
+              <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Experian</SourceName>
+              <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>SSA Death</SourceName>
+              <SourceDocumentGuid>I9f8d45990fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Vehicle</SourceName>
+              <SourceDocumentGuid>I9f8d1e930fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Bank Account Header Records</SourceName>
+              <SourceDocumentGuid>I9f8d6cb10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+          </PersonBirthDates>
+          <PersonBirthDates>
+            <PersonBirthDate>12/XX/1958</PersonBirthDate>
+            <SourceInfo>
+              <SourceName>Driver's Licenses</SourceName>
+              <SourceDocumentGuid>I9f8d1e940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Driver's Licenses</SourceName>
+              <SourceDocumentGuid>I9f8d1e970fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+          </PersonBirthDates>
+          <PersonBirthDates>
+            <PersonBirthDate>01/XX/1961</PersonBirthDate>
+            <SourceInfo>
+              <SourceName>Driver's Licenses</SourceName>
+              <SourceDocumentGuid>I9f8d1e960fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+          </PersonBirthDates>
+          <PersonBirthDates>
+            <PersonBirthDate>10/XX/1951</PersonBirthDate>
+            <SourceInfo>
+              <SourceName>Arrest</SourceName>
+              <SourceDocumentGuid>I9f8d6caf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+            <SourceInfo>
+              <SourceName>Arrest</SourceName>
+              <SourceDocumentGuid>I9f8d6cae0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+          </PersonBirthDates>
+          <PersonBirthDates>
+            <PersonBirthDate>05/XX/1957</PersonBirthDate>
+            <SourceInfo>
+              <SourceName>Driver's Licenses</SourceName>
+              <SourceDocumentGuid>I9f8d1e950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+          </PersonBirthDates>
+          <PersonBirthDates>
+            <PersonBirthDate>01/XX/1959</PersonBirthDate>
+            <SourceInfo>
+              <SourceName>Criminal &amp; Court</SourceName>
+              <SourceDocumentGuid>I9f8d1e8b0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+            </SourceInfo>
+          </PersonBirthDates>
+        </PersonProfile>
+        <DriverLicenseInfo>
+          <DriverLicenseNumber>AB666666777XXX</DriverLicenseNumber>
+          <DriverLicenseState>TN</DriverLicenseState>
+        </DriverLicenseInfo>
+        <DriverLicenseInfo>
+          <DriverLicenseNumber>MI0022446XXX</DriverLicenseNumber>
+          <DriverLicenseState>MI</DriverLicenseState>
+        </DriverLicenseInfo>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <MiddleName>ERD</MiddleName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <SourceInfo>
+            <SourceName>Bank Account Header Records</SourceName>
+            <SourceDocumentGuid>I9f8d6cb10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <MiddleName>JANE</MiddleName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <SourceInfo>
+            <SourceName>NPI</SourceName>
+            <SourceDocumentGuid>I9f8d1ea60fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <MiddleName>S</MiddleName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Equifax</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <MiddleName>SD</MiddleName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <SourceInfo>
+            <SourceName>Bank Account Header Records</SourceName>
+            <SourceDocumentGuid>I9f8d6cb10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JILL</FirstName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JOHN</FirstName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45960fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Hunting and Fishing</SourceName>
+            <SourceDocumentGuid>I9f8d1e9d0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JOHNANDJANE</FirstName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <SourceInfo>
+            <SourceName>Household Listing</SourceName>
+            <SourceDocumentGuid>I9f8d1ea70fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JONATHON</FirstName>
+          <LastName>CONSUMER</LastName>
+          <FullName>CONSUMER, JONATHON</FullName>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Driver's Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d1e940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Driver's Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d45b90fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <MiddleName>B</MiddleName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <FullName>JANE B SAMPLE-DOCUMENT</FullName>
+          <SourceInfo>
+            <SourceName>Phone Record</SourceName>
+            <SourceDocumentGuid>I9f8d45b50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <MiddleName>SUE</MiddleName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <FullName>JANE SUE SAMPLE-DOCUMENT</FullName>
+          <SourceInfo>
+            <SourceName>Criminal &amp; Court</SourceName>
+            <SourceDocumentGuid>I9f8d45d20fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANIE</FirstName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <FullName>JANIE SAMPLE-DOCUMENT</FullName>
+          <SourceInfo>
+            <SourceName>Criminal &amp; Court</SourceName>
+            <SourceDocumentGuid>I9f8d45d20fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <LastName>S DOCUMENT</LastName>
+          <FullName>S DOCUMENT, JANE</FullName>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>JANE</FirstName>
+          <LastName>SAMPLE-DOCUMENT AKA JONATHON CONSUMER</LastName>
+          <FullName>SAMPLE-DOCUMENT AKA JONATHON CONSUMER, JANE</FullName>
+          <SourceInfo>
+            <SourceName>Professional Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d459f0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <AKANames>
+          <FirstName>SERVICES</FirstName>
+          <MiddleName>LLC</MiddleName>
+          <LastName>SAMPLE-DOCUMENT</LastName>
+          <FullName>SAMPLE-DOCUMENT DENTAL SERVICES LLC</FullName>
+          <SourceInfo>
+            <SourceName>Global Sanctions</SourceName>
+            <SourceDocumentGuid>I9f8d45cf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </AKANames>
+        <NPINumber>9999999999</NPINumber>
+        <EmailAddress>JANE.SAMPLE@SBCGLOBAL.NET</EmailAddress>
+        <EmailAddress>drsampledocument@janesampledocumentdds.com</EmailAddress>
+        <EmailAddress>jane.sample@teschmkt.com</EmailAddress>
+        <EmailAddress>JANE.SAMPLE@TESCHMKT.COM</EmailAddress>
+        <KnownAddresses>
+          <Address>
+            <Street>101 W 6th ST</Street>
+            <City>TUCSON</City>
+            <State>AZ</State>
+            <ZipCode>85701</ZipCode>
+            <ReportedDate>09/21/2019</ReportedDate>
+          </Address>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Equifax</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <City>SAINT PAUL</City>
+            <State>MN</State>
+            <Country>UNITED STATES</Country>
+            <ReportedDate>12/31/2017</ReportedDate>
+          </Address>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Equifax</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Global Sanctions</SourceName>
+            <SourceDocumentGuid>I9f8d45cf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>10655 N BIRCH ST BURBA MN</Street>
+            <State>MN</State>
+            <Country>UNITED STATES</Country>
+            <ReportedDate>10/08/2014</ReportedDate>
+          </Address>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>2600 W 55TH ST 12</Street>
+            <City>MINNEAPOLIS</City>
+            <State>MN</State>
+            <ZipCode>55410</ZipCode>
+            <County>HENNEPIN COUNTY</County>
+            <Country>UNITED STATES</Country>
+            <ReportedDate>02/15/2014</ReportedDate>
+            <Latitude>44.90335</Latitude>
+            <Longitude>-93.31243</Longitude>
+          </Address>
+          <Phones>
+            <PhoneNumber>(651) 337-1516</PhoneNumber>
+            <PhoneNumberType>PREVIOUS</PhoneNumberType>
+            <AdditionalPhoneList>(651) 340-4416</AdditionalPhoneList>
+            <PhoneNumberInfoList>
+              <PhoneNumber>(651) 337-1516</PhoneNumber>
+              <PhoneNumberType>PREVIOUS</PhoneNumberType>
+            </PhoneNumberInfoList>
+            <PhoneNumberInfoList>
+              <PhoneNumber>(651) 340-4416</PhoneNumber>
+              <PhoneNumberType>PREVIOUS</PhoneNumberType>
+            </PhoneNumberInfoList>
+          </Phones>
+          <SourceInfo>
+            <SourceName>Phone Record</SourceName>
+            <SourceDocumentGuid>I9f8d45b50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>2600 W 55th ST APT 12</Street>
+            <City>MINNEAPOLIS</City>
+            <State>MN</State>
+            <ZipCode>55410</ZipCode>
+            <ReportedDate>02/15/2014</ReportedDate>
+          </Address>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Equifax</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>240 SUMMIT AVE</Street>
+            <City>SAINT PAUL</City>
+            <State>MN</State>
+            <ZipCode>55102</ZipCode>
+            <County>RAMSEY COUNTY</County>
+            <Country>UNITED STATES</Country>
+            <ReportedDate>05/08/2011</ReportedDate>
+            <Latitude>44.9454</Latitude>
+            <Longitude>-93.10944</Longitude>
+          </Address>
+          <Phones>
+            <PhoneNumber>(555) 555-0726</PhoneNumber>
+            <PhoneNumberType>RESIDENTIAL-WIRELESS</PhoneNumberType>
+            <PhoneNumberInfoList>
+               <PhoneNumber>(555) 555-0726</PhoneNumber>
+               <PhoneNumberType>RESIDENTIAL - WIRELESS</PhoneNumberType>
+            </PhoneNumberInfoList>
+          </Phones>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Bank Account Header Records</SourceName>
+            <SourceDocumentGuid>I9f8d6cb10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Professional Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d459f0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>New Movers</SourceName>
+            <SourceDocumentGuid>I9f8d1ea80fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Email Records</SourceName>
+            <SourceDocumentGuid>I9f8d1ea90fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Business Contact Records</SourceName>
+            <SourceDocumentGuid>I9f8d6cb30fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Infractions</SourceName>
+            <SourceDocumentGuid>I9f8d1e8c0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Marijuana Related Businesses</SourceName>
+            <SourceDocumentGuid>I9f8d45d50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Vehicle</SourceName>
+            <SourceDocumentGuid>I9f8d45d30fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>611 OPPERMAN DR</Street>
+            <City>SAINT PAUL</City>
+            <State>MN</State>
+            <ZipCode>55123</ZipCode>
+            <County>DAKOTA COUNTY</County>
+            <ReportedDate>03/07/2011</ReportedDate>
+            <Latitude>44.827612</Latitude>
+            <Longitude>-93.11333</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Vehicle</SourceName>
+            <SourceDocumentGuid>I9f8d1e930fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Household Listing</SourceName>
+            <SourceDocumentGuid>I9f8d1ea70fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Historic Credit Bureau</SourceName>
+            <SourceDocumentGuid>I9f8d1ea50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Hunting and Fishing</SourceName>
+            <SourceDocumentGuid>I9f8d1e9d0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>10655 N BIRCH ST</Street>
+            <City>BURBA</City>
+            <State>MN</State>
+            <ZipCode>55000</ZipCode>
+            <Country>UNITED STATES</Country>
+            <ReportedDate>01/03/2011</ReportedDate>
+          </Address>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Equifax</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Driver's Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d45b90fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>610 OPPERMAN DR</Street>
+            <City>SAINT PAUL</City>
+            <State>MN</State>
+            <ZipCode>55123</ZipCode>
+            <County>DAKOTA COUNTY</County>
+            <Country>UNITED STATES</Country>
+            <ReportedDate>07/01/2009</ReportedDate>
+            <Latitude>44.827753</Latitude>
+            <Longitude>-93.11333</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45960fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Address Compilation</SourceName>
+            <SourceDocumentGuid>I9f8d1ea20fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>1254 DIOMEDEIDAE HWY</Street>
+            <City>BAXTER</City>
+            <State>TN</State>
+            <ZipCode>38544</ZipCode>
+            <County>PUTNAM COUNTY</County>
+            <ReportedDate>05/17/2007</ReportedDate>
+            <Latitude>36.11516</Latitude>
+            <Longitude>-85.66017</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Equifax</SourceName>
+            <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Driver's Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d1e950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>1234 SAMPLE DR</Street>
+            <City>SUPERIOR</City>
+            <State>WI</State>
+            <ZipCode>54880</ZipCode>
+            <County>DOUGLAS COUNTY</County>
+            <ReportedDate>02/28/2003</ReportedDate>
+            <Latitude>46.59987</Latitude>
+            <Longitude>-92.12425</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Driver's Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d1e970fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>666 W DISAPPEARING AVE NE</Street>
+            <City>YOUNG AMERICA</City>
+            <State>MN</State>
+            <ZipCode>55555</ZipCode>
+            <County>CARVER COUNTY</County>
+            <ReportedDate>12/31/1994</ReportedDate>
+            <Latitude>44.77056</Latitude>
+            <Longitude>-93.92181</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Historic Credit Bureau</SourceName>
+            <SourceDocumentGuid>I9f8d1ea50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Address Compilation</SourceName>
+            <SourceDocumentGuid>IMPEOPLEERDDUMMYDOCUMENT01234567</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>78 TURNSTYLE DR</Street>
+            <City>HOUSTON</City>
+            <State>TX</State>
+            <ZipCode>77080</ZipCode>
+            <County>HARRIS COUNTY</County>
+            <ReportedDate>05/19/1993</ReportedDate>
+            <Latitude>29.81567</Latitude>
+            <Longitude>-95.5236</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Driver's Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d1e960fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>615 OPPERMAN DR</Street>
+            <City>SAINT PAUL</City>
+            <State>MN</State>
+            <ZipCode>55123</ZipCode>
+            <County>DAKOTA COUNTY</County>
+            <Latitude>44.827669</Latitude>
+            <Longitude>-93.113555</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>620 OPPERMAN DR</Street>
+            <City>SAINT PAUL</City>
+            <State>MN</State>
+            <ZipCode>55123</ZipCode>
+            <County>DAKOTA COUNTY</County>
+            <Latitude>44.82781</Latitude>
+            <Longitude>-93.11312</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>10655 N BIRCH ST BURBA</Street>
+            <City>N BIRCH ST</City>
+            <State>MN</State>
+            <ZipCode>10655</ZipCode>
+            <Country>UNITED STATES</Country>
+          </Address>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>0655 N BIRCH ST 10655 N BIRCH ST 10655 N BIRCH ST BURBA</Street>
+            <Country>UNITED STATES</Country>
+          </Address>
+          <SourceInfo>
+            <SourceName>TransUnion</SourceName>
+            <SourceDocumentGuid>I9f8d45950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>Experian</SourceName>
+            <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>1200 JANESAMPLE RD</Street>
+            <City>MT WASHINGTON</City>
+            <State>KY</State>
+            <ZipCode>40047</ZipCode>
+            <County>BULLITT COUNTY</County>
+            <Country>UNITED STATES</Country>
+            <Latitude>38.04509</Latitude>
+            <Longitude>-85.55871</Longitude>
+          </Address>
+          <Phones>
+            <PhoneNumber>(555) 999-9999</PhoneNumber>
+            <PhoneNumberType>VOICE LINE</PhoneNumberType>
+            <PhoneNumberInfoList>
+               <PhoneNumber>(612) 501-7313</PhoneNumber>
+               <PhoneNumberType>HOME</PhoneNumberType>
+            </PhoneNumberInfoList>
+          </Phones>
+          <SourceInfo>
+            <SourceName>NPI</SourceName>
+            <SourceDocumentGuid>I9f8d1ea60fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>40 FISHKILL AVE</Street>
+            <City>12345</City>
+            <State>AK</State>
+            <ZipCode>12345</ZipCode>
+          </Address>
+          <SourceInfo>
+            <SourceName>Hunting and Fishing</SourceName>
+            <SourceDocumentGuid>I9f8d1e9e0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>5100 W CRESTVIEW DR</Street>
+            <City>TUCSON</City>
+            <State>AZ</State>
+            <ZipCode>85745</ZipCode>
+            <County>PIMA COUNTY</County>
+            <Country>UNITED STATES</Country>
+            <Latitude>32.257179</Latitude>
+            <Longitude>-111.072898</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Arrest</SourceName>
+            <SourceDocumentGuid>I9f8d6caf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>5678 SAMPLE AVE</Street>
+            <City>CADILLAC</City>
+            <State>MI</State>
+            <ZipCode>49601</ZipCode>
+            <County>WEXFORD COUNTY</County>
+            <Latitude>44.24341</Latitude>
+            <Longitude>-85.52117</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Driver's Licenses</SourceName>
+            <SourceDocumentGuid>I9f8d1e940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>1234 SAMPLE COUNTER BLVD</Street>
+            <City>CHICAGO</City>
+            <State>IL</State>
+            <ZipCode>60606</ZipCode>
+            <County>COOK COUNTY</County>
+            <Country>UNITED STATES</Country>
+            <Latitude>41.88182</Latitude>
+            <Longitude>-87.63668</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Work Affiliations</SourceName>
+            <SourceDocumentGuid>I9f8d45b80fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <KnownAddresses>
+          <Address>
+            <Street>PO BOX 1063</Street>
+            <City>WESTERVILLE</City>
+            <State>OH</State>
+            <ZipCode>43086</ZipCode>
+            <County>FRANKLIN COUNTY</County>
+            <Country>UNITED STATES</Country>
+            <Latitude>40.122012</Latitude>
+            <Longitude>-82.935982</Longitude>
+          </Address>
+          <SourceInfo>
+            <SourceName>Voters</SourceName>
+            <SourceDocumentGuid>I9f8d1eaf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+          <SourceInfo>
+            <SourceName>State Death Record</SourceName>
+            <SourceDocumentGuid>I9f8d1e8d0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+          </SourceInfo>
+        </KnownAddresses>
+        <AdditionalPhoneNumbers>(612) 501-7314</AdditionalPhoneNumbers>
+        <AdditionalPhoneNumbers>(651) 337-1516</AdditionalPhoneNumbers>
+        <AdditionalPhoneNumbers>(651) 340-4416</AdditionalPhoneNumbers>
+        <AdditionalPhoneNumbers>(612) 501-7313</AdditionalPhoneNumbers>
+        <AdditionalPhoneNumbers>(262) 338-1919</AdditionalPhoneNumbers>
+        <AdditionalPhoneNumbers>(651) 501-7313</AdditionalPhoneNumbers>
+        <AdditionalPhoneNumbers>(651) 501-7314</AdditionalPhoneNumbers>
+        <AdditionalPhoneNumbers>(212) 720-3700</AdditionalPhoneNumbers>
+        <PersonEntityId>P1__MTYwNzg0NTcyNzc</PersonEntityId>
+        <PersonTREntityId>P16078457277</PersonTREntityId>
+        <AllSourceDocuments>
+          <SourceName>Driver's Licenses</SourceName>
+          <SourceDocumentGuid>I9f8d1e940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Address Compilation</SourceName>
+          <SourceDocumentGuid>I9f8d1ea20fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Address Compilation</SourceName>
+          <SourceDocumentGuid>IMPEOPLEERDDUMMYDOCUMENT01234567</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Phone Record</SourceName>
+          <SourceDocumentGuid>I9f8d45b50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Criminal &amp; Court</SourceName>
+          <SourceDocumentGuid>I9f8d1e8b0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Criminal &amp; Court</SourceName>
+          <SourceDocumentGuid>I9f8d45d20fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Professional Licenses</SourceName>
+          <SourceDocumentGuid>I9f8d459f0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Hunting and Fishing</SourceName>
+          <SourceDocumentGuid>I9f8d1e9e0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Hunting and Fishing</SourceName>
+          <SourceDocumentGuid>I9f8d1e9d0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Email Records</SourceName>
+          <SourceDocumentGuid>I9f8d1ea90fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Vehicle</SourceName>
+          <SourceDocumentGuid>I9f8d45d30fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Voters</SourceName>
+          <SourceDocumentGuid>I9f8d1eaf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Household Listing</SourceName>
+          <SourceDocumentGuid>I9f8d1ea70fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>New Movers</SourceName>
+          <SourceDocumentGuid>I9f8d1ea80fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Infractions</SourceName>
+          <SourceDocumentGuid>I9f8d1e8c0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Driver's Licenses</SourceName>
+          <SourceDocumentGuid>I9f8d1e950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Work Affiliations</SourceName>
+          <SourceDocumentGuid>I9f8d45b80fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Historic Credit Bureau</SourceName>
+          <SourceDocumentGuid>I9f8d1ea50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Driver's Licenses</SourceName>
+          <SourceDocumentGuid>I9f8d45b90fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Experian</SourceName>
+          <SourceDocumentGuid>I9f8d1e850fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Experian</SourceName>
+          <SourceDocumentGuid>I9f8d45d10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Arrest</SourceName>
+          <SourceDocumentGuid>I9f8d6caf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Arrest</SourceName>
+          <SourceDocumentGuid>I9f8d6cae0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Arrest</SourceName>
+          <SourceDocumentGuid>I9f8d1e800fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Driver's Licenses</SourceName>
+          <SourceDocumentGuid>I9f8d1e970fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>SSA Death</SourceName>
+          <SourceDocumentGuid>I9f8d45990fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>TransUnion</SourceName>
+          <SourceDocumentGuid>I9f8d45950fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>TransUnion</SourceName>
+          <SourceDocumentGuid>I9f8d45940fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>TransUnion</SourceName>
+          <SourceDocumentGuid>I9f8d45960fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>State Death Record</SourceName>
+          <SourceDocumentGuid>I9f8d1e8d0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Vehicle</SourceName>
+          <SourceDocumentGuid>I9f8d1e930fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Driver's Licenses</SourceName>
+          <SourceDocumentGuid>I9f8d1e960fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>NPI</SourceName>
+          <SourceDocumentGuid>I9f8d1ea60fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Global Sanctions</SourceName>
+          <SourceDocumentGuid>I9f8d45cf0fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Business Contact Records</SourceName>
+          <SourceDocumentGuid>I9f8d6cb30fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Marijuana Related Businesses</SourceName>
+          <SourceDocumentGuid>I9f8d45d50fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+        <AllSourceDocuments>
+          <SourceName>Bank Account Header Records</SourceName>
+          <SourceDocumentGuid>I9f8d6cb10fe511e3a86490b11c6a4a8f</SourceDocumentGuid>
+        </AllSourceDocuments>
+      </ns3:PersonResponseDetail>
+    </RecordDetails>
+  </ResultGroup>
+</ns4:PersonResultsPageV3>
